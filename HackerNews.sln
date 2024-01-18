@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerNews.API", "HackerNews.API\HackerNews.API.csproj", "{ADD0D1F8-C21B-49B1-BF32-C58F5BB5F7D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackerNews.API", "HackerNews.API\HackerNews.API.csproj", "{ADD0D1F8-C21B-49B1-BF32-C58F5BB5F7D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerNews.API_Test", "HackerNews.API_Test\HackerNews.API_Test.csproj", "{E75B0733-9781-41A3-BFF7-FFFA5F27E155}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackerNews.API_Test", "HackerNews.API_Test\HackerNews.API_Test.csproj", "{E75B0733-9781-41A3-BFF7-FFFA5F27E155}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4FB91B26-BCAB-451B-BE46-4219D7CCD7C9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{BFABF735-D1FE-45D6-B8B7-231D09131044}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerNews.Domain", "HackerNews.Domain\HackerNews.Domain.csproj", "{3248ACEE-3172-4D90-8190-26299BBBEECF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackerNews.Domain", "HackerNews.Domain\HackerNews.Domain.csproj", "{3248ACEE-3172-4D90-8190-26299BBBEECF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerNews.Repository", "HackerNews.Repository\HackerNews.Repository.csproj", "{D0A66CFB-7E01-450F-8ACE-C391742F6FF6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackerNews.Repository", "HackerNews.Repository\HackerNews.Repository.csproj", "{D0A66CFB-7E01-450F-8ACE-C391742F6FF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerNews.Service", "HackerNews.Service\HackerNews.Service.csproj", "{47595CAF-5487-48EE-8D30-5DBF8DC3999B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackerNews.Service", "HackerNews.Service\HackerNews.Service.csproj", "{47595CAF-5487-48EE-8D30-5DBF8DC3999B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

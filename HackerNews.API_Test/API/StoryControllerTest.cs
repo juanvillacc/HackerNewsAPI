@@ -10,18 +10,18 @@ using System.Net;
 
 namespace HackerNews.API_Test.API
 {
-    public class NewControllerTest
+    public class StoryControllerTest
     {
-        private readonly Mock<INewService> _serviceMock;
-        private readonly NewController _controller;
+        private readonly Mock<IStoryService> _serviceMock;
+        private readonly StoryController _controller;
         private IActionResult? _response;
         private const string _exceptionMessage = "my test";
         private const string _exceptionCode = "001";
 
-        public NewControllerTest()
+        public StoryControllerTest()
         {
-            this._serviceMock = new Mock<INewService>();
-            this._controller = new NewController(this._serviceMock.Object);
+            this._serviceMock = new Mock<IStoryService>();
+            this._controller = new StoryController(this._serviceMock.Object);
         }
 
         [Fact]
@@ -65,7 +65,7 @@ namespace HackerNews.API_Test.API
             _ = this._response.Should().NotBeNull();
             _ = result.Should().NotBeNull();
             _ = result.Value.Should().NotBeNull();
-            _ = result.Value.Should().BeOfType<PageResult<NewItemDto>>();
+            _ = result.Value.Should().BeOfType<PageResult<StoryResponseDto>>();
             _ = result.StatusCode.Should().Be((int)HttpStatusCode.OK, result.StatusCode.ToString());
         }
 
@@ -79,7 +79,7 @@ namespace HackerNews.API_Test.API
         {
             this._serviceMock
                 .Setup(mock => mock.SearchAsync(It.IsAny<string>(), It.IsAny<int>(), It.IsAny<int>()))
-                .ReturnsAsync((0, new List<NewItemDto>()));
+                .ReturnsAsync((0, new List<StoryResponseDto>()));
         }
 
         private void GivenNewListWithAnException()

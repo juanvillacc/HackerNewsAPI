@@ -1,6 +1,6 @@
 ﻿namespace HackerNews.Domain.Contracts
 {
-    public interface INewRepository
+    public interface IStoryRepository
     {
         void GetAllAsync();
     }

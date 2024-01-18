@@ -10,7 +10,7 @@ namespace HackerNews.API.Filters
     {
         public void Apply(OpenApiSchema schema, SchemaFilterContext context)
         {
-            if (context.Type == typeof(NewItemDto))
+            if (context.Type == typeof(StoryResponseDto))
             {
                 schema.Example = new OpenApiObject()
                 {

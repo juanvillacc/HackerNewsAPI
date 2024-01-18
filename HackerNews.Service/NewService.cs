@@ -4,8 +4,8 @@ namespace HackerNews.Service
 {
     public class NewService
     {
-        private readonly INewRepository _newRepository;
-        public NewService(INewRepository newRepository)
+        private readonly IStoryRepository _newRepository;
+        public NewService(IStoryRepository newRepository)
         {
             _newRepository = newRepository; 
         }
