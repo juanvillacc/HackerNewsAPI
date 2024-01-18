@@ -24,10 +24,7 @@ namespace HackerNews.Repository.Migrations
             modelBuilder.Entity("HackerNews.Domain.Models.Story", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Link")
                         .HasColumnType("nvarchar(max)");

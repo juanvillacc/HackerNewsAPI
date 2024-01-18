@@ -15,7 +15,7 @@ namespace HackerNews.Repositories
             base.OnModelCreating(modelBuilder);
         }
 
-        public DbSet<Story> Story { get; set; }
+        public DbSet<Story>? Story { get; set; }
       
 
         public override int SaveChanges()

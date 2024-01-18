@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace HackerNews.Repository.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240118125610_initial")]
-    partial class initial
+    [Migration("20240118143632_initial-migration")]
+    partial class initialmigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -24,13 +24,10 @@ namespace HackerNews.Repository.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("HackerNews.Domain.Models.NewItem", b =>
+            modelBuilder.Entity("HackerNews.Domain.Models.Story", b =>
                 {
                     b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
                     b.Property<string>("Link")
                         .HasColumnType("nvarchar(max)");
@@ -41,7 +38,7 @@ namespace HackerNews.Repository.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("NewItem");
+                    b.ToTable("Story");
                 });
 #pragma warning restore 612, 618
         }

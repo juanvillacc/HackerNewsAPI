@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HackerNews.Domain\HackerNews.Domain.csproj" />
+    <ProjectReference Include="..\HackerNews.Helpers\HackerNews.Helpers.csproj" />
   </ItemGroup>
 
 </Project>

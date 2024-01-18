@@ -37,5 +37,12 @@ namespace HackerNews.API.Controllers
                 ResultsCount = result.count
             }) ;
         }
+
+        [HttpPost]
+        public async Task<ActionResult> SynchronizeAsync()
+        {
+            await _service.SynchronizeAsync();
+            return Ok();
+        }
     }
 }

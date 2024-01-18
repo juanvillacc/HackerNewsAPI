@@ -1,7 +1,7 @@
 using HackerNews.API.Filters;
 using HackerNews.Repositories;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Configuration;
+using HackerNews.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,6 +14,9 @@ builder.Services.AddSwaggerGen(options => options.SchemaFilter<ExampleSchemaFilt
 var cnn = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(cnn));
+
+builder.Services.AddServices();
+builder.Services.AddRepositories();
 
 var app = builder.Build();
 
