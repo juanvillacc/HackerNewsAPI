@@ -30,8 +30,4 @@
     <ProjectReference Include="..\HackerNews.Service\HackerNews.Service.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Service\" />
-  </ItemGroup>
-
 </Project>
