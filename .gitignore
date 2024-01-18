@@ -17,3 +17,5 @@
 /HackerNews.Repository/obj
 /HackerNews.Service/bin/Debug/net6.0
 /HackerNews.Service/obj
+/HackerNews.Helpers/bin/Debug/net6.0
+/HackerNews.Helpers/obj
