@@ -32,12 +32,15 @@ namespace HackerNews.Service
             foreach (var id in nonExistingIds)
             {
                 var storyDetail = await _storyRepository.GetStoryDetail(id);
-                newStoriesList.Add(new Story()
+                if (storyDetail.Type.Equals("story"))
                 {
-                    Id = storyDetail.Id,
-                    Title = storyDetail.Title,
-                    Link = storyDetail.Url,
-                });
+                    newStoriesList.Add(new Story()
+                    {
+                        Id = storyDetail.Id,
+                        Title = storyDetail.Title,
+                        Link = storyDetail.Url,
+                    });
+                }
             }
 
             await _storyRepository.BulkInsert(newStoriesList);

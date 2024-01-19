@@ -26,9 +26,9 @@ namespace HackerNews.API.Controllers
         [SwaggerResponse(statusCode: StatusCodes.Status403Forbidden, ApiLiterals.Description403Forbidden, typeof(Error403))]
         [SwaggerResponse(statusCode: StatusCodes.Status404NotFound, ApiLiterals.Description404NotFound, typeof(Error404))]
         [SwaggerResponse(statusCode: StatusCodes.Status500InternalServerError, ApiLiterals.Description500InternalServerError, typeof(Error500))]
-        public async Task<ActionResult<PageResult<StoryResponseDto>>> Search(string title, int pageSize, int pageIndex)
+        public async Task<ActionResult<PageResult<StoryResponseDto>>> Search(string? title, int pageSize, int pageIndex)
         {
-            var result = await _service.SearchAsync(title, pageSize, pageIndex);
+            var result = await _service.SearchAsync(!string.IsNullOrEmpty(title) ? title : String.Empty , pageSize, pageIndex);
             return Ok(new PageResult<StoryResponseDto> ()
             {
                 Page = result.data,

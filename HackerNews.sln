@@ -17,7 +17,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackerNews.Repository", "Ha
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackerNews.Service", "HackerNews.Service\HackerNews.Service.csproj", "{47595CAF-5487-48EE-8D30-5DBF8DC3999B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerNews.Helpers", "HackerNews.Helpers\HackerNews.Helpers.csproj", "{CBCB4444-9751-4B9A-B2DC-92F424B64BE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackerNews.Helpers", "HackerNews.Helpers\HackerNews.Helpers.csproj", "{CBCB4444-9751-4B9A-B2DC-92F424B64BE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HackerNews.AzureFunctions", "HackerNews.AzureFunctions\HackerNews.AzureFunctions.csproj", "{F4309010-6643-458F-AA0D-D21F98B07907}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +51,10 @@ Global
 		{CBCB4444-9751-4B9A-B2DC-92F424B64BE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBCB4444-9751-4B9A-B2DC-92F424B64BE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBCB4444-9751-4B9A-B2DC-92F424B64BE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4309010-6643-458F-AA0D-D21F98B07907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4309010-6643-458F-AA0D-D21F98B07907}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4309010-6643-458F-AA0D-D21F98B07907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4309010-6643-458F-AA0D-D21F98B07907}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +66,7 @@ Global
 		{D0A66CFB-7E01-450F-8ACE-C391742F6FF6} = {4FB91B26-BCAB-451B-BE46-4219D7CCD7C9}
 		{47595CAF-5487-48EE-8D30-5DBF8DC3999B} = {4FB91B26-BCAB-451B-BE46-4219D7CCD7C9}
 		{CBCB4444-9751-4B9A-B2DC-92F424B64BE6} = {4FB91B26-BCAB-451B-BE46-4219D7CCD7C9}
+		{F4309010-6643-458F-AA0D-D21F98B07907} = {4FB91B26-BCAB-451B-BE46-4219D7CCD7C9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {670D7BFE-9662-4792-978B-3D8DE91519F4}

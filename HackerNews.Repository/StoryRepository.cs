@@ -19,8 +19,8 @@ namespace HackerNews.Repository
         }
         public async Task<(int count, List<Story> data)> SearchAsync(string title, int pageSize, int pageIndex)
         {
-            var total = _context.Story.Where(x => x.Title.Contains(title)).Count();
-            var results = await _context.Story.Where(x => x.Title.Contains(title)).Skip(pageIndex).Take(pageSize).ToListAsync();
+            var total = _context.Story.Where(x => x.Title.Contains(title) || title.Equals("")).Count();
+            var results = await _context.Story.Where(x => x.Title.Contains(title) || title.Equals("")).Skip(pageIndex).Take(pageSize).ToListAsync();
 
             return (total, results);
         }

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HackerNews.AzureFunctions", "HackerNews.AzureFunctions.csproj", "{B76D689B-DD72-4F48-ABFB-3183D67462AD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B76D689B-DD72-4F48-ABFB-3183D67462AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B76D689B-DD72-4F48-ABFB-3183D67462AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B76D689B-DD72-4F48-ABFB-3183D67462AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B76D689B-DD72-4F48-ABFB-3183D67462AD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {861E7751-2F9B-46EE-AD37-DE53DEE065AE}
+	EndGlobalSection
+EndGlobal
