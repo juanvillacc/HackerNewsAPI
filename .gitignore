@@ -19,3 +19,9 @@
 /HackerNews.Service/obj
 /HackerNews.Helpers/bin/Debug/net6.0
 /HackerNews.Helpers/obj
+/HackerNews.API/bin/Release/net6.0
+/HackerNews.Domain/bin/Release/net6.0
+/HackerNews.Helpers/bin/Release/net6.0
+/HackerNews.Repository/bin/Release/net6.0
+/HackerNews.Service/bin/Release/net6.0
+/HackerNews.AzureFunctions/.vscode
